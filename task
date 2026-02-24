@@ -1,0 +1,147 @@
+lib/
+│
+├── main.dart
+├── app.dart
+│
+├── core/
+│   │
+│   ├── config/
+│   │   ├── env.dart
+│   │   └── supabase_config.dart
+│   │
+│   ├── routing/
+│   │   ├── app_router.dart
+│   │   └── route_names.dart
+│   │
+│   ├── theme/
+│   │   ├── app_theme.dart
+│   │   ├── app_colors.dart
+│   │   └── text_styles.dart
+│   │
+│   ├── network/
+│   │   └── supabase_client_provider.dart
+│   │
+│   ├── layout/
+│   │   ├── responsive_layout.dart
+│   │   ├── breakpoints.dart
+│   │   └── base_scaffold.dart
+│   │
+│   ├── services/
+│   │   ├── notification_service.dart
+│   │   └── storage_service.dart
+│   │
+│   └── utils/
+│       ├── date_formatter.dart
+│       ├── validators.dart
+│       └── debouncer.dart
+│
+├── features/
+│   │
+│   ├── auth/
+│   │   ├── data/
+│   │   │   ├── auth_repository.dart
+│   │   │   └── auth_remote_datasource.dart
+│   │   │
+│   │   ├── domain/
+│   │   │   ├── user_model.dart
+│   │   │   └── role_enum.dart
+│   │   │
+│   │   └── presentation/
+│   │       ├── providers/
+│   │       │   ├── auth_provider.dart
+│   │       │   └── auth_state.dart
+│   │       │
+│   │       ├── screens/
+│   │       │   ├── splash_screen.dart
+│   │       │   └── login_screen.dart
+│   │       │
+│   │       └── widgets/
+│   │           └── otp_input_field.dart
+│   │
+│   ├── dashboard/
+│   │   ├── data/
+│   │   │   └── dashboard_repository.dart
+│   │   │
+│   │   ├── domain/
+│   │   │   └── dashboard_stats_model.dart
+│   │   │
+│   │   └── presentation/
+│   │       ├── providers/
+│   │       │   └── dashboard_provider.dart
+│   │       │
+│   │       ├── screens/
+│   │       │   ├── resident_dashboard.dart
+│   │       │   └── committee_dashboard.dart
+│   │       │
+│   │       └── widgets/
+│   │           ├── dashboard_card.dart
+│   │           └── quick_action_button.dart
+│   │
+│   ├── complaints/
+│   │   ├── data/
+│   │   │   ├── complaint_repository.dart
+│   │   │   └── complaint_remote_datasource.dart
+│   │   │
+│   │   ├── domain/
+│   │   │   └── complaint_model.dart
+│   │   │
+│   │   └── presentation/
+│   │       ├── providers/
+│   │       │   └── complaint_provider.dart
+│   │       │
+│   │       ├── screens/
+│   │       │   ├── complaint_list_screen.dart
+│   │       │   ├── complaint_detail_screen.dart
+│   │       │   └── raise_complaint_screen.dart
+│   │       │
+│   │       └── widgets/
+│   │           ├── complaint_card.dart
+│   │           └── status_badge.dart
+│   │
+│   ├── schedule/
+│   │   ├── data/
+│   │   ├── domain/
+│   │   └── presentation/
+│   │
+│   ├── polls/
+│   │   ├── data/
+│   │   ├── domain/
+│   │   └── presentation/
+│   │
+│   ├── events/
+│   │   ├── data/
+│   │   ├── domain/
+│   │   └── presentation/
+│   │
+│   ├── expenses/
+│   │   ├── data/
+│   │   ├── domain/
+│   │   └── presentation/
+│   │
+│   ├── notifications/
+│   │   ├── data/
+│   │   ├── domain/
+│   │   └── presentation/
+│   │
+│   └── profile/
+│       ├── data/
+│       ├── domain/
+│       └── presentation/
+│
+└── shared/
+    │
+    ├── widgets/
+    │   ├── primary_button.dart
+    │   ├── app_card.dart
+    │   ├── loading_widget.dart
+    │   ├── empty_state_widget.dart
+    │   └── confirmation_dialog.dart
+    │
+    ├── extensions/
+    │   └── context_extensions.dart
+    │
+    ├── constants/
+    │   └── app_constants.dart
+    │
+    └── enums/
+        └── status_enum.dart
